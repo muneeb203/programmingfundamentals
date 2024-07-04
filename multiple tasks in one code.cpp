@@ -1,127 +1,90 @@
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-int task2();
-int task3();
-int task4();
-int task5();
-int task6();
-int task7();
-void insertInto(int arr[][5]);	
-int display(int arr[][5]);
-int main() {
-   int x;
-   cout<<"Enter the program you want to run"<<endl;
-   cin>>x;
-    switch(x){
-            case 1: break;
-            case 2: {task2();
-                        break;}
-            case 3: {task3();
-                        break;}
-            case 4: {task4();
-                        break;}
-            case 5: {task5();
-                        break;}
-            case 6: {task6();
-                        break;}
-            case 7: {task7();
-                        break;}
-}
-    return 0;
-}
+#include<iostream>
+
+using namespace std; 
+void showChoices();
+void task2();
+void task3();
+void task4();
+
+int main(){
+
+showChoices();
 
 
-
-int task2(){
-       	int arr[5][5]={};
-	 insertInto(arr);	
 
 return 0;
 }
 
-void insertInto(int arr[][5]){
-	
-	cout<<"Enter values in arr";
-	for(int i=0;i<5;i++){
-		for(int j=0;j<5;j++){
-		cin>>arr[i][j];
+
+
+
+		void showChoices(){
+		int a;
+		cout<<"Press 1 for task 1"<<endl;
+		cout<<"Press 2 for task 2"<<endl;
+		cout<<"Press 3 for task 3"<<endl;
+		cout<<"Press 4 for task 4"<<endl;
+		cin>>a;
+		switch (a){
+		case 1:  break;
+		
+		case 2: task2();
+break;
+		
+		case 3: task3();
+break;
+		case 4: task4();
+break;
+		//default: cout<<"ERROR!!!!!!!!";
 		}
-	}
-	int a;
-	cout<<"pRESS 1 FOR DISPLAYING MATRIX"<<endl;
-	cin>>a;
-	if (a==1)
-	display(arr);
-	else 
-	cout<<"Wrong input!!!"<<endl;
-	
-	
-}
+		}
+		
 
-int display(int arr[][5]){
+		
 
-cout<<"arr is="<<endl;
+		void task2(){
+			cout<<"Ibn Mas'ud reported: The Messenger of Allah, peace and blessings upon him, said""\n The believer does not insults other, does not curse others, is not vulgar, and is not shameless.\n Source: Sunan al-Tirmidhi 1977, Grade: Sahih"<<endl;
+		}
+
+
+		void task3(){
+		float arr[]={32.20,41.88,16.12,23.88, 7.21};
+		float a,b;
+float total=0;
+		sizeof(arr);
+		sizeof(float);
+		a=sizeof(arr)/sizeof(float);
+		//cout<<a<<endl;
+		
+		for(int i=0;i<=a;i++){
+		cout<<arr[i];
+		b=arr[i]/2.0;
+		cout<<"       No after division="<<b<<endl;
+		b=arr[i];		
+		total=total+b;
+		}
+		cout<<"Sum="<<total<<endl;
+		
+		}
+
+
+
+
+
+void task4(){
+int largest;
+int smallest;
+
+int array[6]={4,8,6,3,2};
 
 for(int i=0;i<5;i++){
-for(int j=0;j<5;j++){
-cout<<arr[i][j]<<"  ";
-}
-cout<<endl;
-}
-return 0;
-}
+if ((array[i]>=array[0])&&(array[i]>=array[1])&&(array[i]>=array[2])&&(array[i]>=array[3])&&(array[i]>=array[4]))
+cout<<"Greatest valus is   "<<array[i];}
 
 
 
 
-int task3(){
-return 0;
 
-}
-
-int task4(){
-return 0;
-
-}
-int task5(){
-return 0;
-
-}
-int task6(){
-    int order;
-    int mat[][];
-    cout<<"FINDING THE SUM OF DIAGONAL ENTERIES OF THE MATRIX"<<endl;
-    cout<<"Enter the enteries of matrix";
-    cout<<"Enter the order of square matrix";
-    cin>>order;
-    if (order<5){
-    for(int i=0;i<order;i++){
-        for(int j=0;j<order;j++){s
-            cin>>mat[order][order];
-            cout<<mat[order][order]<<" ";
-        }
-        cout<<endl;
-    }
-    
-    }
-    else 
-    cout<<"wRONG INPUT!!!";
-    
-    for(int i=0;i<order;i++){
-    	for(int j=0;j<order;j++){
-    		if(i==j){
-	`	count=count+mat[order][order];		}    		
-    }
-    }
-    cout<<"Sum of diagonal enteries is="<<"  "<<count<<endl;
-    
-    
-return 0;
-
-}
-int task7(){
-return 0;
 
 }
 
@@ -129,4 +92,67 @@ return 0;
 
 
 
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
